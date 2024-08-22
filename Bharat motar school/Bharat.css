@@ -1,0 +1,246 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+/* body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 20px;
+} */
+
+/* Header styles */
+/* header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+} */
+/* 
+header h1 {
+    margin: 0;
+} */
+
+/* Navigation styles */
+/* nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;
+} */
+
+/* nav ul li {
+    display: inline;
+    margin-right: 10px;
+} */
+
+/* nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+} */
+
+/* nav ul li a:hover {
+    background-color: #f0f0f0;
+} */
+
+/* Section styles */
+/* section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section ul li {
+    margin-bottom: 10px;
+/* } */ 
+
+/* Form styles */
+/* form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"],
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+    background-color: #45a049;
+} */
+
+/* Footer styles (optional) */
+/* footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+} 
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #444;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Section styling */
+section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+section h2 {
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Form and input styling */
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=number],
+form input[type=date],
+form textarea,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+form input[type=submit],
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover,
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive adjustments (optional) */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    form input[type=text],
+    form input[type=email],
+    form input[type=number],
+    form input[type=date],
+    form textarea,
+    form select {
+        width: 100%;
+    }
+}

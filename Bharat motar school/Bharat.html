@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="Bharat.css">
+</head>
+    <body>
+        <header>
+            <h1>Admin Dashboard</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#superAdminDashboard">Super Admin Dashboard</a></li>
+                <li><a href="#adminDashboard">Admin Dashboard</a></li>
+                <li><a href="#subAdminDashboard">Sub Admin Dashboard</a></li>
+                <li><a href="#instructorDashboard">Instructor Dashboard</a></li>
+                <li><a href="#userDashboard">User Dashboard</a></li>
+            </ul>
+        </nav>
+
+        <!-- Super Admin Dashboard -->
+
+        <section id="superAdminDashboard">
+        <h2>Super Admin Dashboard</h2>
+        <ul>
+            <li>
+                <h3>Admin</h3>
+                <ul>
+                    <li>List</li>
+                    <li>Add
+                        <ul>
+                            <li>Name</li>
+                            <li>Address</li>
+                            <li>Contact Number</li>
+                            <li>Email Id</li>
+                            <li>Number of Cars</li>
+                        </ul>
+                    </li>
+                    <li>View
+                        <ul>
+                            <li>View Basic Details</li>
+                            <li>Enquiries Under These Branch</li>
+                            <li>Admissions</li>
+                            <li>Trainings (Next Cycle)</li>
+                            <li>Licenses (Next Cycle)</li>
+                            <li>Accounts (Next Cycle)</li>
+                        </ul>
+                    </li>
+                    <li>Delete</li>
+                    <li>Edit</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+        <header>
+            <h1>Super Admin Dashboard</h1>
+        </header>
+    
+        <section id="adminManagement">
+            <h2>Admin Management</h2>
+    
+            <!-- List Admins -->
+            <div id="listAdmins">
+                <!-- Placeholder for listing admins -->
+                <label for="List Admins">Name:</label>
+                <input type="text" id="List Admin" name="List Admin" required><br><br>
+                <ul>
+                    <li>Admin 1</li>
+                    <li>Admin 2</li>
+                    <!-- Add more admins as needed -->
+                </ul>
+            </div>
+    
+            <!-- Add Admin -->
+            <div id="addAdmin">
+                <h3>Add New Admin</h3>
+                <form action="superAdminDashboard" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+    
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address"><br><br>
+    
+                    <label for="contact">Contact Number:</label>
+                    <input type="text" id="contact" name="contact"><br><br>
+    
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+    
+                    <label for="cars">Number of Cars:</label>
+                    <input type="number" id="cars" name="cars"><br><br>
+    
+                    <input type="submit" value="Add Admin">
+                </form>
+            </div>
+    
+            <!-- View Admin Details -->
+            <div id="viewAdmin">
+                <h3>View Admin Details</h3>
+                <!-- Placeholder for displaying admin details -->
+                <div>
+                    <h4>Admin Name: Admin 1</h4>
+                    <p>Address: Address details</p>
+                    <p>Contact Number: Contact details</p>
+                    <p>Email: email@example.com</p>
+                    <p>Number of Cars: 5</p>
+                    <!-- Include additional details as needed -->
+                </div>
+            </div>
+    
+            <!-- Delete Admin -->
+            <div id="deleteAdmin">
+                <h3>Delete Admin</h3>
+                <!-- Placeholder for admin deletion interface -->
+                <button>Delete Admin 1</button>
+            </div>
+    
+            <!-- Edit Admin -->
+            <div id="editAdmin">
+                <h3>Edit Admin</h3>
+                <!-- Placeholder for admin edit form -->
+                <form action="edit_admin.php" method="POST">
+                    <label for="editName">Name:</label>
+                    <input type="text" id="editName" name="editName" value="Admin 1"><br><br>
+    
+                    <label for="editAddress">Address:</label>
+                    <input type="text" id="editAddress" name="editAddress"><br><br>
+    
+                    <label for="editContact">Contact Number:</label>
+                    <input type="text" id="editContact" name="editContact"><br><br>
+    
+                    <label for="editEmail">Email ID:</label>
+                    <input type="email" id="editEmail" name="editEmail"><br><br>
+    
+                    <label for="editCars">Number of Cars:</label>
+                    <input type="number" id="editCars" name="editCars"><br><br>
+    
+                    <input type="submit" value="Save Changes">
+                </form>
+            </div>
+        </section>
+        
+
+        <!-- Admin Dashboard -->
+        <section id="adminDashboard">
+            <h2>Admin Dashboard</h2>
+            <ul>
+                <li>
+                    <h3>Admissions</h3>
+                    <ul>
+                        <li>List</li>
+                        <li>Add
+                            <ul>
+                                <li>
+                                    <label for="enrollmentNo">Enrollment No.</label>
+                                    <input type="text" id="enrollmentNo" name="enrollmentNo" required>
+                                </li>
+                                <li>
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </li>
+                                <li>
+                                    <label for="description">Description</label>
+                                    <textarea id="description" name="description"></textarea>
+                                </li>
+                                <li>
+                                    <label for="service">Service (Dropdown)</label>
+                                    <select id="service" name="service">
+                                        <option value="Service A">Service A</option>
+                                        <option value="Service B">Service B</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </li>
+                                <li>
+                                    <label for="date">Date</label>
+                                    <input type="date" id="date" name="date">
+                                </li>
+                                <li>
+                                    <label for="mobileNumber">Mobile Number</label>
+                                    <input type="text" id="mobileNumber" name="mobileNumber" required>
+                                </li>
+                                <li>
+                                    <label for="email">Email (Optional)</label>
+                                    <input type="email" id="email" name="email">
+                                </li>
+                                <li>
+                                    <label for="address">Address</label>
+                                    <input type="text" id="address" name="address">
+                                </li>
+                                <li>
+                                    <label for="area">Area</label>
+                                    <input type="text" id="area" name="area">
+                                </li>
+                                <li>
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" name="city">
+                                </li>
+                                <li>
+                                    <button id="submitAdmissionForm">Submit</button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>View</li>
+                        <li>Edit (Same Form as Add)</li>
+                    </ul>
+                </li>
+                    <h3>License (Next Cycle)</h3>
+                    <label for="License">License</label>
+                    <input type="text" id="License" name="License">
+                    
+                    <!-- Placeholder for License management -->
+                </li>
+                <li>
+                    <h3>Trainings (Next Cycle)</h3>
+                    <!-- Placeholder for Trainings management -->
+                    <label for="Trainings">Trainings</label>
+                    <input type="text" id="Trainings" name="Trainings">
+
+                </li>
+                <li>
+                    <h3>Accounts (Next Cycle)</h3>
+                    <!-- Placeholder for Accounts management -->
+                    <label for="Accounts">Accounts</label>
+                    <input type="text" id="Accounts" name="Accounts">
+                </li>
+            </ul>
+            <button id="mybutton">Done</button>
+        </section>
+
+        <!-- Sub Admin Dashboard -->
+        <section id="subAdminDashboard">
+            <h2>Sub Admin Dashboard</h2>
+                <ul>
+                    <li>
+                        <label for="admission">admission</label>
+                        <input type="text" id="admission" name="admission">
+                    </li> 
+                    <li>
+                        <label for="Enquiries">Enquiries</label>
+                        <input type="text" id="Enquiries" name="Enquiries">
+                    </li>
+                    <li>
+                        <label for="Licenses(next cycle)">Licenses</label>
+                        <input type="text" id="Licenses(next cycle)" name="Licenses(next cycle)">
+                    </li>
+                    
+                    <li>
+                        <label for="Training(next cycle)">Training</label>
+                        <input type="text" id="Training(next cycle)" name="Training(next cycle)">
+                    </li>  
+                </ul>
+                <button id="mybutton">Done</button>
+            
+            <!-- Content similar to Admin Dashboard -->
+        </section>
+
+        <!-- Instructor Dashboard -->
+        <section id="instructorDashboard">
+            <h2>Instructor Dashboard</h2>
+            <ul>
+                <li><label for="Name">Name</label>
+                    <input type="text" id="Name" name="Name">
+                </li>
+                
+
+                <li><label for="slug">slug</label>
+                    <input type="text" id="slug" name="slug">
+                </li>
+            </ul>
+            <button id="mybutton">Done</button>
+        </section>
+
+        <!-- User Dashboard -->
+        <section id="userDashboard">
+            <h2>User Dashboard</h2>
+            <ul>
+                <li>
+                    <label for="Name">Name</label>
+                    <input type="text" id="Name" name="Name">
+                </li>
+                
+                <li>
+                    <label for="Email">Email</label>
+                    <input type="text" id="Email" name="Email">
+                </li>
+                
+                <li><label for="Password">slug</label>
+                    <input type="text" id="Password" name="Password">
+                </li>
+            
+                <li><label for="Mobile Number">Mobile Number</label>
+                    <input type="text" id="Mobile Number" name="Mobile Number">
+                </li>
+                
+                <li>
+                    <label for="Address (Optional)">Address (Optional)</label>
+                    <input type="text" id="Address (Optional)" name="Address (Optional)">
+                </li>
+                
+                <li><label for="Role ID">Role ID</label>
+                    <input type="text" id="Role ID" name="Role ID">
+                </li>
+                <li>
+                    <label for="Is Active">Is Active</label>
+                    <input type="text" id="Is Active" name="Is Active">
+                </li>
+            </ul>
+            <button id="mybutton">Done</button>
+        </section>
+    <script src="Bharat.js"></script>
+    </body>
+</html> 
+
